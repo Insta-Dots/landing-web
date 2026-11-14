@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+/* The app's "ink and dot" palette: ink carries text and actions, one cobalt
+   dot marks the brand and links. Same values as AppColors in the Flutter app. */
+@theme {
+  --color-ink: #161a2e;
+  --color-ink-soft: #2a2f48;
+  --color-paper: #f4f5f7;
+  --color-surface: #ffffff;
+  --color-line: #e5e7ee;
+  --color-muted: #6b7084;
+  --color-on-ink-muted: #a9aec4;
+  --color-brand-500: #2b59ff;
+  --color-brand-50: #e9eeff;
+
+  --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
+
+  --radius-pass: 28px;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    /* Section links land below the sticky header, not under it. */
+    scroll-padding-top: 5.5rem;
+  }
+  body {
+    @apply bg-paper font-sans text-ink antialiased;
+  }
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-brand-500;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

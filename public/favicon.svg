@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+  <!-- The Insta Dots mark: 3×3 dots, gaps at 1 and 7, cobalt at 5. -->
+  <g fill="#161A2E">
+    <circle cx="5" cy="5" r="3.6"/><circle cx="25" cy="5" r="3.6"/>
+    <circle cx="5" cy="15" r="3.6"/><circle cx="15" cy="15" r="3.6"/>
+    <circle cx="5" cy="25" r="3.6"/><circle cx="25" cy="25" r="3.6"/>
+  </g>
+  <circle cx="25" cy="15" r="3.6" fill="#2B59FF"/>
+</svg>
